@@ -41,7 +41,7 @@ nav {
 }
 
 .nav-links ul li a {
-  color: #fff;
+  color: rgb(14, 10, 10);
   text-decoration: none;
 }
 
@@ -50,18 +50,19 @@ nav {
   height: 1000px;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: -10;
   transform: translateY(-50%);
 }
 
-.circle {
+#circle {
   width: 1000px;
   height: 1000px;
   position: absolute;
   top: 0;
   left: 0;
   border-radius: 50%;
-  background: rgb(77, 218, 84);
+  transform: rotate(0deg);
+  transition: 1s;
 }
 
 .feature img {
@@ -71,6 +72,7 @@ nav {
 .feature {
   position: absolute;
   display: flex;
+  color: rgb(8, 8, 8);
 }
 
 .feature div {
@@ -89,23 +91,26 @@ nav {
 .two {
   top: 150px;
   left: 350px;
+  transform: rotate(-90deg);
 }
 
 .three {
   bottom: 450px;
   left: 50px;
+  transform: rotate(-180deg);
 }
 
 .four {
   bottom: 150px;
   right: 350px;
+  transform: rotate(-270deg);
 }
 
 .mobile {
-  width: 200px;
+  width: 150px;
   position: absolute;
   top: 50%;
-  left: 40%;
+  left: 42.5%;
   transform: translateY(-50%);
   z-index: 1;
 }
@@ -114,11 +119,12 @@ nav {
   right: 10%;
   top: 50%;
   transform: translateY(-50%);
+  text-align: center;
 }
 
 .controls h3 {
   margin: 15px 0;
-  color: #fff;
+  color: rgb(14, 10, 10);
 }
 
 #upBtn {
@@ -130,4 +136,16 @@ nav {
   width: 15px;
   cursor: pointer;
   transform: rotate(180deg);
+}
+
+.overlay {
+  width: 0;
+  height: 0;
+  border-top: 500px solid red;
+  border-right: 500px solid transparent;
+  border-bottom: 500px solid green;
+  border-left: 500px solid yellow;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
